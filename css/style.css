@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: 1rem;
+	color: #404040;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ==================
+    Typography
+===================== */
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+/* ===========
+
+    general layout
+
+    =========
+*/
+
+.main-grid {
+	display: grid;
+	grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+	gap: 2px;
+}
+
+.header {
+	background-color: black;
+}
+
+.header-home {
+	background: transparent;
+	position: absolute;
+	width: 100%;
+}
+
+.header-content {
+	display: flex;
+	grid-column: 2 / -2;
+}
+
+.nav {
+	display: flex;
+	position: fixed;
+	padding: 25px;
+
+}
+
+.nav-list {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-right: auto;
+}
+
+.social-item {
+	font-size: 1.6rem;
+}
+
+.open-nav {
+	border: 0;
+	background: none;
+	cursor: pointer;
+	padding: 0.5em;
+	margin-left: auto;
+	font-size: 3em;
+}
+
+.logo-link {
+	padding-top: 1.5em;
+	margin-right: 20px;
+}
+
+/* icons */
+
+.facebook,
+.twitter {
+	color: royalblue;
+}
+.instagram {
+	color: purple;
+}
