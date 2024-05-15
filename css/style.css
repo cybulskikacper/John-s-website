@@ -48,6 +48,7 @@ h2 {
 	left: 0;
 	right: 0;
 	grid-column: 1 / -1;
+	background-color: white;
 }
 
 .nav-list {
@@ -86,4 +87,43 @@ h2 {
 }
 .instagram {
 	color: purple;
+}
+
+/* main section */
+
+.hero {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.main-image {
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.source {
+	color: #808080;
+}
+.freepik {
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+	padding-bottom: 2px;
+}
+
+.icon,
+.color {
+	color: #4e5dab;
+	font-weight: bold;
+}
+
+.icon {
+	margin: 9px;
+}
+
+.adress {
+	white-space: nowrap;
+}
+
+.info {
 }
