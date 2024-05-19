@@ -82,6 +82,7 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	grid-row: 1;
+	margin-left: 50px;
 }
 
 /* icons */
@@ -96,27 +97,42 @@ h2 {
 
 /* main section */
 
-.hero {
+.about-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr;
+	gap: 1em;
 	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	margin: 0 50px;
+}
+.main-image {
+	display: grid;
+	grid-column: span 3;
+}
+
+.hero::after {
+	content: '';
+	border-left: 6px solid green;
+	height: 1000px;
+}
+
+.text {
+}
+
+.info {
+	grid-column: 1 / 2;
 }
 
 .title {
 	font-size: 3.5rem;
+	grid-template-rows: 4 / 2;
 	margin: 0;
 }
 
 .profession {
 	color: var(--dark-blue);
+	font-weight: bold;
 	margin: 0;
-}
-
-.main-image {
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: yellow;
 }
 
 .source,
@@ -130,11 +146,6 @@ h2 {
 	color: #808080;
 }
 
-.info {
-	display: flex;
-	flex-direction: column;
-}
-
 .icon,
 .color {
 	color: var(--dark-blue);
@@ -142,7 +153,7 @@ h2 {
 }
 
 .icon {
-	margin: 0 6px 0 20px;
+	margin-right: 5px;
 }
 
 .adress {
@@ -169,4 +180,11 @@ h2 {
 .fa-download {
 	font-size: 1.2rem;
 	margin: 0 10px;
+}
+
+.dupa {
+	background-color: yellow;
+	width: 1400px;
+	height: 1400px;
+	margin-top: 20px;
 }
