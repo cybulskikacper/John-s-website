@@ -70,7 +70,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* margin-left: 50px; */
 }
 /* icons */
 .facebook,
@@ -164,11 +163,11 @@ body {
 }
 
 @media (min-width: 600px) {
-	.main-grid {
-		grid-template-columns: auto 1fr auto;
-	}
-
 	.wrapper {
 		max-width: 1400px;
+	}
+
+	img {
+		height: auto;
 	}
 }
