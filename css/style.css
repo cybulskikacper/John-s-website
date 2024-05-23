@@ -108,10 +108,11 @@ body {
 	display: grid;
 	gap: 0.5em;
 	place-items: flex-start;
+	font-size: 0.8rem;
 }
 
 .title {
-	font-size: 3.5rem;
+	font-size: 2.8rem;
 }
 
 .profession {
@@ -128,6 +129,11 @@ body {
 .lorem {
 	color: #808080;
 }
+
+.source {
+	margin: 20px 0;
+}
+
 .freepik {
 	border-bottom: 1px solid #000;
 	padding-bottom: 2px;
@@ -140,13 +146,17 @@ body {
 	font-weight: bold;
 }
 
+.flex-column {
+	margin-top: 30px;
+}
+
 .icon {
 	margin-right: 5px;
 }
 .cv {
 	padding: 0.8em 3em;
-	margin-top: 30px;
-	font-size: 1.2rem;
+	margin-top: 20px;
+	font-size: 1rem;
 	color: var(--white);
 	text-transform: uppercase;
 	text-align: center;
@@ -183,7 +193,7 @@ body {
 		padding-right: 20px;
 	}
 	.title {
-		font-size: 4.2rem;
+		font-size: 3.5rem;
 		letter-spacing: 1px;
 	}
 
@@ -196,7 +206,6 @@ body {
 	}
 	.source {
 		font-size: 1.1rem;
-		margin: 20px 0;
 	}
 
 	.info {
@@ -210,7 +219,30 @@ body {
 
 @media (min-width: 1400px) {
 	.wrapper {
-		padding: 0;
-		width: 100%;
+		max-width: 100%;
+	}
+
+	.nav {
+		padding-inline: 3em;
+	}
+
+	.hero {
+		border-right: 2.8em solid var(--dark-blue);
+	}
+}
+
+@media (min-width: 1800px) {
+	.nav {
+		padding-inline: 50em;
+	}
+
+	.hero {
+		border-right: 50em solid var(--dark-blue);
+	}
+
+	.nav-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
